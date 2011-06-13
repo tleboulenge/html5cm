@@ -1,0 +1,1350 @@
+
+<!DOCTYPE html> 
+<!--
+Copyright 2010 Google Inc.
+ 
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+ 
+     http://www.apache.org/licenses/LICENSE-2.0
+ 
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ 
+Original HTML5 slides:
+    Marcin Wichary (mwichary)
+ 
+Modifications:
+    Ernest Delgado (ernestd)
+    Alex Russell (slightlyoff)
+    Mihai Ionescu (mihai)
+    Arne Roomann-Kurrik (kurrik)
+    Eric Bidelman (ericbidelman)
+    Malte Ubl (malteubl)
+	Sylvain Weber (sylvainw)
+ 
+TODO(ericbidelman): Add jump to slide
+--> 
+<html> 
+  <head> 
+    <title>Dites bonjour à HTML5</title> 
+    <meta charset="UTF-8"/> 
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"/> 
+    <link rel="stylesheet" href="css/prettify.css"/> 
+    <link rel="stylesheet" href="css/slide-presentation.css"/> 
+    <link rel="stylesheet" href="css/slide-content.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23686861-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+  </head>
+  <body> 
+    <div class="presentation"> 
+      <div class="presentationCounter">Chargement...</div> 
+      <div class="slides"> 
+
+		<div class="slide image" data-image="images/french/gcameroon.png"> 
+		</div>
+ 
+<div class="slide titleSlide" data-image="images/french/html5intro.jpg"> 
+  <section class="flex vbox boxcenter"> 
+    <hgroup> 
+      <h1 class="html5">Dites bonjour à</h1>
+      <h3 class="titleText">
+        <strong>Sylvain Weber</strong><br> 
+        Rich Media Technical Specialist
+      </h3>
+	  <h3 class="titleText">
+        <strong>Thierry Le Boulengé</strong><br>
+        Software Engineer
+      </h3> 
+    </hgroup> 
+  </section> 
+</div> 
+ 
+
+<div class="slide image" data-image="images/fullslides/html5.png"> 
+  <div data-build> 
+    <section class="bottomLeft dark"> 
+      <h1>Sondage</h1> 
+    </section> 
+  </div> 
+</div>
+
+<div class="slide"> 
+  <header>HTML5, c'est quoi ?</header> 
+  <section> 
+    <ul> 
+	  <li>Nouvelle version d’HTML</li>
+      <li>Plusieurs technologies : HTML5 + CSS3 + JS</li>
+      <li>Le futur du Web</li>
+    </ul>
+  </section>
+</div>
+
+<div class="slide"> 
+  <header>Au programme</header> 
+  <section> 
+    <ul> 
+	  <li>Idées reçues sur HTML5 (10min)</li>
+	  <li>Fonctionnalités techniques (10min)</li>
+      <li>Utilisation dans un contexte créatif (20min)</li>
+      <li>Projet Ro.me (5min)</li>
+      <li>Questions (15min)</li>
+    </ul>
+  </section>
+</div>
+
+<div class="slide image" data-image="images/french/dog.jpg"> 
+  <div> 
+    <section class="bottomLeft dark"> 
+      <h1>Idées reçues sur HTML5</h1> 
+    </section> 
+  </div> 
+</div>
+
+<div class="slide image" data-image="images/french/idee.png"> 
+  <div> 
+    <section class="bottomRight dark"> 
+      <h1>&quot;Flash est installé sur 99% des ordinateurs, HTML5 est inutile.&quot;</h1> 
+    </section>
+  </div>
+</div>
+
+<div class="slide image" data-image="images/fullslides/phones.jpg"> 
+  <div> 
+    <section class="topWide dark"> 
+      <h1>Explosion des usages web sur mobile</h1> 
+    </section>
+  </div>
+</div>
+
+<div class="slide image" data-image="images/french/desktop_mobile.png" style="height:600px"> 
+</div>
+
+<div class="slide image" data-image="images/french/html5fail.png"> 
+  <div> 
+    <section class="bottomRight dark">
+      <h1>&quot;HTML5 ne sera pas utilisable<br/> avant 2022.&quot;</h1> 
+    </section>
+  </div>
+</div>
+
+<div class="slide image" data-image="images/fullslides/browsers.png"> 
+  <div data-build> 
+    <section class="topWide dark"> 
+      <h1>Tout le monde est de la partie</h1> 
+    </section> 
+  </div> 
+</div>
+
+<div class="slide iframe">
+    <iframe src="about:blank" data-src="http://html5readiness.com" frameborder=0 scrolling=no style="height:660px;width:900px"></iframe>
+</div>
+
+<div class="slide"> 
+  <p style="text-align:center"><img src="images/french/flash_html5.png" style="height:650px; margin-top:-40px" /></p>
+</div>
+
+<div class="slide"> 
+  <header>Vers un langage universel</header> 
+  <section> 
+    <ul>
+      <li>Philosophie open source</li>
+      <li>Partage des connaissances</li>
+      <li>Autoformez-vous</li>
+      <li>Devenez expert</li>
+    </ul>
+  </section> 
+</div>
+
+<div class="slide image" data-image="images/french/zoom.jpg"> 
+  <div> 
+    <section class="bottomRight dark"> 
+      <h1>Zoom technique</h1> 
+    </section>
+  </div>
+</div>
+
+<div class="slide transitionSlide distant-slide" id="semantics-markup-title">
+  <section class="middle">
+    <header>Markup sémantique</header>
+    <p>Quelques additions bienvenues !</p>
+    <img src="tech
+/HTML5_Semantics_64.png" title="HTML5 Semantics &amp; Markup" alt="HTML5 Semantics &amp; Markup">
+  </section>
+</div>
+
+<div class="slide semantics distant-slide" id="semantic-tags-1">
+  <header><span class="html">HTML</span> Nouveaux tags descriptifs</header>
+  <section>
+    <style>
+      #semantic-tags-1 {
+        font-size: 60%;
+      }
+    </style>
+
+    <pre class="two-column prettyprint" id="semantic-tags-1"><span class="tag">&lt;body&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">header</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;</span><b><span class="tag">hgroup</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;h1&gt;</span><span class="pln">Page title</span><span class="tag">&lt;/h1&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;h2&gt;</span><span class="pln">Page subtitle</span><span class="tag">&lt;/h2&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;/hgroup&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;/header&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">nav</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;ul&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;Navigation...<br>&nbsp; &nbsp;</span><span class="tag">&lt;/ul&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;/nav&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">section</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;</span><b><span class="tag">article</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;</span><b><span class="tag">header</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;h1&gt;</span><span class="pln">Title</span><span class="tag">&lt;/h1&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;/header&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;section&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;Content...<br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;/section&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;/article&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;article&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;header&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;h1&gt;</span><span class="pln">Title</span><span class="tag">&lt;/h1&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;/header&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;section&gt;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;Content...<br>&nbsp; &nbsp; &nbsp;</span><span class="tag">&lt;/section&gt;</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="tag">&lt;/article&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;/section&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">aside</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp;Top links...<br>&nbsp; </span><span class="tag">&lt;/aside&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">figure</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">/&gt;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="tag">&lt;</span><b><span class="tag">figcaption</span></b><span class="tag">&gt;</span><span class="pln">Chart 1.1</span><span class="tag">&lt;/figcaption&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;/figure&gt;</span><span class="pln"><br><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">footer</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; &nbsp;Copyright ©<br>&nbsp; &nbsp;</span><span class="tag">&lt;</span><b><span class="tag">time</span></b><span class="pln"> </span><b><span class="atn">datetime</span></b><span class="pun">=</span><span class="atv">"2010-11-08"</span><span class="tag">&gt;</span><span class="pln">2010</span><span class="tag">&lt;/time&gt;</span><span class="pln">.<br>&nbsp; </span><span class="tag">&lt;/footer&gt;</span><span class="pln"><br></span><span class="tag">&lt;/body&gt;</span></pre>
+  </section>
+</div>
+
+<div class="slide semantics distant-slide" id="semantic-tags-2">
+  <header><span class="html">HTML</span> Markup applicatif</header>
+  <style>
+    #cars-input {
+      width: 500px;
+    }
+    #semantic-tags-2 pre {
+      font-size: 55%;
+    }
+  </style>
+  <section>
+    <pre class="prettyprint"><span class="tag">&lt;input</span><span class="pln"> </span><b><span class="atn">list</span></b><span class="pun">=</span><span class="atv">"cars"</span><span class="tag">/&gt;</span><span class="pln"><br></span><span class="tag">&lt;</span><b><span class="tag">datalist</span></b><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cars"</span><span class="tag">&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"BMW"</span><span class="tag">/&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Ford"</span><span class="tag">/&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Volvo"</span><span class="tag">/&gt;</span><span class="pln"><br></span><span class="tag">&lt;/</span><b><span class="tag">datalist</span></b><span class="tag">&gt;</span><span class="pln"><br></span><input id="cars-input" placeholder="L'autocomplétion en action..." list="cars"><span class="pln"><br></span><datalist id="cars"><span class="pln"><br>&nbsp; </span><option value="BMW"><span class="pln"><br>&nbsp; </span></option><option value="Ford"><span class="pln"><br>&nbsp; </span></option><option value="Volvo"><span class="pln"><br></span></option></datalist><span class="pln"><br></span><span class="tag">&lt;</span><b><span class="tag">menu</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">command</span></b><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"command"</span><span class="tag">&gt;</span><span class="pln">Save as...</span><span class="tag">&lt;/</span><b><span class="tag">command</span></b><span class="tag">&gt;</span><span class="pln"><br></span><span class="tag">&lt;/</span><b><span class="tag">menu</span></b><span class="tag">&gt;</span><span class="pln"><br><br></span><span class="tag">&lt;</span><b><span class="tag">details</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">summary</span></b><span class="tag">&gt;</span><span class="pln">HTML 5</span><span class="tag">&lt;/</span><b><span class="tag">summary</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; This slide deck teaches you everything you need to know about HTML 5.<br></span><span class="tag">&lt;</span><b><span class="tag">/details</span></b><span class="tag">&gt;</span></pre>
+
+<pre class="prettyprint"><span class="tag">&lt;</span><b><span class="tag">meter</span></b><span class="pln"> </span><b><span class="atn">min</span></b><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><b><span class="atn">max</span></b><span class="pun">=</span><span class="atv">"100"</span><span class="pln"> </span><b><span class="atn">low</span></b><span class="pun">=</span><span class="atv">"40"</span><span class="pln"> </span><b><span class="atn">high</span></b><span class="pun">=</span><span class="atv">"90"</span><span class="pln"> </span><b><span class="atn">optimum</span></b><span class="pun">=</span><span class="atv">"100"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"91"</span><span class="tag">&gt;</span><span class="pln">A+</span><span class="tag">&lt;/</span><b><span class="tag">meter</span></b><span class="tag">&gt;</span><span class="pln"><br>Your score is: </span><meter value="91" min="0" max="100" low="40" high="90" optimum="100"><span class="pln">A+</span></meter><span class="pln"><br><br></span><span class="tag">&lt;</span><b><span class="tag">progress</span></b><span class="tag">&gt;</span><span class="pln">working...</span><span class="tag">&lt;/</span><b><span class="tag">progress</span></b><span class="tag">&gt;</span><span class="pln"><br>Download is: </span><progress><span class="pln">working...</span></progress><span class="pln"><br><br></span><span class="tag">&lt;</span><b><span class="tag">progress</span></b><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"75"</span><span class="pln"> </span><b><span class="atn">max</span></b><span class="pun">=</span><span class="atv">"100"</span><span class="tag">&gt;</span><span class="pln">3/4 complete</span><span class="tag">&lt;/</span><b><span class="tag">progress</span></b><span class="tag">&gt;</span><span class="pln"><br>Goal is: </span><progress value="75" max="100"><span class="pln">3/4 complete</span></progress></pre>
+
+  </section>
+</div>
+
+<div class="slide semantics far-future" id="new-form-types">
+  <header><span class="html">HTML</span> Nouveaux types de champs</header>
+
+  <section>
+    <style>
+    .form-inputs-css {
+      font-size: 50%;
+    }
+    .form-inputs {
+      font-size: 55%;
+    }
+    .form-inputs input {
+      float: right;
+      border: 1px solid #CCC;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset;
+      -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset;
+      -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset;
+      padding: 3px 5px;
+    }
+    input:invalid {
+      border-color: #e88;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, 0 0 5px rgba(255, 0, 0, .8);
+      -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, 0 0 5px rgba(255, 0, 0, .8);
+      -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, 0 0 5px rgba(255, 0, 0, .8);
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, 0 0 5px rgba(255, 0, 0, .8);
+    }
+    input[required] {
+      border-color: #88a;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, rgba(0, 0, 255, 0.5) 0px 0px 3px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, rgba(0, 0, 255, 0.5) 0px 0px 3px;
+      -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, rgba(0, 0, 255, 0.5) 0px 0px 3px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px inset, rgba(0, 0, 255, 0.5) 0px 0px 3px;
+    }
+    </style>
+    <pre class="prettyprint form-inputs-css"><span class="tag">&lt;style&gt;</span><span class="pln"><br>&nbsp; </span><span class="pun">:</span><span class="pln">invalid </span><span class="pun">{</span><span class="pln"> <br>&nbsp; &nbsp; border</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#e88;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">box</span><span class="pun">-</span><span class="pln">shadow</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">5px</span><span class="pln"> rgba</span><span class="pun">(</span><span class="lit">255</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="pun">.</span><span class="lit">8</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"><br>&nbsp; </span><span class="pun">[</span><span class="pln">required</span><span class="pun">]</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; border</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> </span><span class="com">#88a;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">box</span><span class="pun">-</span><span class="pln">shadow</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">3px</span><span class="pln"> rgba</span><span class="pun">(</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">255</span><span class="pun">,</span><span class="pln"> </span><span class="pun">.</span><span class="lit">5</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="pun">}</span><span class="pln"><br></span><span class="tag">&lt;/style&gt;</span></pre>
+<pre class="form-inputs prettyprint"><input type="text" required=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><b><span class="atn">required</span></b><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input type="email" value="some@email.com"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">email</span></b><span class="atv">"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"some@email.com"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input type="date" min="2010-08-14" max="2011-08-14" value="2010-08-14"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">date</span></b><span class="atv">"</span><span class="pln"> </span><b><span class="atn">min</span></b><span class="pun">=</span><span class="atv">"2010-08-14"</span><span class="pln"> </span><b><span class="atn">max</span></b><span class="pun">=</span><span class="atv">"2011-08-14"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"2010-08-14"</span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input type="range" min="0" max="50" value="10"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">range</span></b><span class="atv">"</span><span class="pln"> </span><b><span class="atn">min</span></b><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><b><span class="atn">max</span></b><span class="pun">=</span><span class="atv">"50"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"10"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input results="10" type="search" placeholder="Search..."><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">search</span></b><span class="atv">"</span><span class="pln"> </span><b><span class="atn">results</span></b><span class="pun">=</span><span class="atv">"10"</span><span class="pln"> </span><b><span class="atn">placeholder</span></b><span class="pun">=</span><span class="atv">"Search..."</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input type="tel" placeholder="(555) 555-5555" pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">tel</span></b><span class="atv">"</span><span class="pln"> &nbsp;</span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"(555) 555-5555"</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><b><span class="atn">pattern</span></b><span class="pun">=</span><span class="atv">"^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input type="color" placeholder="e.g. #bbbbbb"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">color</span></b><span class="atv">"</span><span class="pln"> </span><b><span class="atn">placeholder</span></b><span class="pun">=</span><span class="atv">"e.g. #bbbbbb"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br><br></span><input type="number" step="1" min="-5" max="10" value="0"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">number</span></b><span class="atv">"</span><span class="pln"> </span><b><span class="atn">step</span></b><span class="pun">=</span><span class="atv">"1"</span><span class="pln"> </span><b><span class="atn">min</span></b><span class="pun">=</span><span class="atv">"-5"</span><span class="pln"> </span><b><span class="atn">max</span></b><span class="pun">=</span><span class="atv">"10"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="tag">/&gt;</span></pre>
+  </section>
+</div>
+
+<div class="slide semantics far-future" id="form-types-mobile">
+  <header><span class="html">HTML</span> Sur téléphone portable</header>
+  <section>
+    <style type="text/css" media="screen">
+      #form-types-mobile div {
+        float: left;
+        width: 24%;
+        padding-right: 1%;
+        text-align: center;
+      }
+      #form-types-mobile img {
+        width: 90%;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 4px 6px;
+      }
+    </style>
+    <div>
+<pre class="prettyprint"><span class="pln">type</span><span class="pun">=</span><span class="str">"</span><em><span class="str">text</span></em><span class="str">"</span></pre>
+      <figure>
+        <img src="tech
+/android-form-text.png" alt="android keyboard on input type text">
+        <figcaption>Android</figcaption>
+      </figure>
+    </div>
+    <div>
+<pre class="prettyprint"><span class="pln">type</span><span class="pun">=</span><span class="str">"</span><em><span class="str">number</span></em><span class="str">"</span></pre>
+      <figure>
+        <img src="tech
+/android-form-number.png" alt="android keyboard on input type number">
+        <figcaption>Android</figcaption>
+      </figure>
+    </div>
+    <div>
+<pre class="prettyprint"><span class="pln">type</span><span class="pun">=</span><span class="str">"</span><em><span class="str">email</span></em><span class="str">"</span></pre>
+      <figure>
+        <img src="tech
+/iphone-form-email.png" alt="iphone keyboard on input type email">
+        <figcaption>iPhone</figcaption>
+      </figure>
+    </div>
+    <div>
+<pre class="prettyprint"><span class="pln">type</span><span class="pun">=</span><span class="str">"</span><em><span class="str">tel</span></em><span class="str">"</span></pre>
+      <figure>
+        <img src="tech
+/iphone-form-tel.png" alt="iphone keyboard on input type tel">
+        <figcaption>iPhone</figcaption>
+      </figure>
+    </div>
+  </section>
+</div>
+
+<div class="slide semantics distant-slide" id="microdata">
+  <style>
+    #microdata-screenshot {
+      width: 84%;
+      margin: 0 auto;
+      display: block;
+      border: 3px solid #ccc;
+    }
+    #microdata figure {
+      display: block;
+      text-align: center;
+      margin: 30px;
+    }
+    #microdata figcaption {
+      display: block;
+      font-size: 15px;
+    }
+  </style>
+  <header><span class="html">HTML</span> Microdata</header>
+
+  <section>
+    <pre class="prettyprint"><span class="tag">&lt;div</span><span class="pln"> </span><b><span class="atn">itemscope</span><span class="pln"> </span><span class="atn">itemtype</span><span class="pun">=</span><span class="atv">"http://data-vocabulary.org/Person"</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp;</span><span class="tag">&lt;p&gt;</span><span class="pln">Je suis </span><span class="tag">&lt;span</span><span class="pln"> </span><b><span class="atn">itemprop</span><span class="pun">=</span><span class="atv">"name"</span></b><span class="tag">&gt;</span><span class="pln">Thierry</span><span class="tag">&lt;/span&gt;</span><span class="pln">.</span><span class="tag">&lt;/p&gt;</span><span class="pln"><br>&nbsp;</span><span class="tag">&lt;p&gt;</span><span class="pln">Je travaille comme </span><span class="tag">&lt;span</span><span class="pln"> </span><b><span class="atn">itemprop</span><span class="pun">=</span><span class="atv">"title"</span></b><span class="tag">&gt;</span><span class="pln">Software Engineer</span><span class="tag">&lt;/span&gt;</span><span class="pln">.</span><span class="tag">&lt;/p&gt;</span><span class="pln"><br>&nbsp;</span><span class="tag">&lt;p&gt;</span><span class="pln">Je vis en </span><span class="tag">&lt;span</span><span class="pln"> </span><b><span class="atn">itemprop</span><span class="pun">=</span><span class="atv">"address.country-name"</span></b><span class="tag">&gt;</span><span class="pln">Suisse</span><span class="tag">&lt;/span&gt;</span><span class="pln">.</span><span class="tag">&lt;/p&gt;</span><span class="pln"><br></span><span class="tag">&lt;/div&gt;</span></pre>
+    <figure>
+      <img id="microdata-screenshot" src="tech
+/tlb-wo-micro.png" alt="Google results without microdata">
+      <figcaption>Résultat de recherche sans microdata</figcaption>
+    </figure>
+    <figure>
+      <img id="microdata-screenshot" src="tech
+/tlb-with-micro.png" alt="Google results without microdata">
+      <figcaption>Résultat de recherche avec microdata</figcaption>
+    </figure>
+    <p>Rich Snippets Testing Tool : <a href="http://www.google.com/webmasters/tools/richsnippets" target="_blank">http://www.google.com/webmasters/tools/richsnippet</a></p>
+  </section>
+</div>
+
+<div class="slide transitionSlide distant-slide" id="offline-storage-title">
+  <section class="middle">
+    <header>Le réseau sans réseau</header>
+    <p>Gérer les interruptions de service</p>
+    <img src="tech
+/HTML5_Offline_Storage_64.png" title="HTML5 Offline &amp; Storage" alt="HTML5 Offline &amp; Storage">
+  </section>
+</div>
+
+<div class="slide offline-storage distant-slide" id="web-storage">
+  <style>
+    #ta {
+      width: 400px;
+      height: 150px;
+      display: block;
+    }
+    #localstorage-message {
+      padding-top: 10px;
+    }
+
+    #ta-log {font-size: 20px;}
+  </style>
+  <header><span class="js">JS</span> Données sur le client</header>
+  <section>
+<pre class="prettyprint"><span class="com">// use localStorage for persistent storage</span><span class="pln"><br></span><span class="com">// use sessionStorage for per tab storage</span><span class="pln"><br>textarea</span><span class="pun">.</span><span class="pln">addEventListener</span><span class="pun">(</span><span class="str">'keyup'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; window</span><span class="pun">.</span><b><span class="pln">localStorage</span></b><span class="pun">.</span><b><span class="pln">setItem</span></b><span class="pun">(</span><span class="str">'value'</span><span class="pun">,</span><span class="pln"> area</span><span class="pun">.</span><span class="pln">value</span><span class="pun">);</span><span class="pln"><br>&nbsp; window</span><span class="pun">.</span><b><span class="pln">localStorage</span></b><span class="pun">.</span><b><span class="pln">setItem</span></b><span class="pun">(</span><span class="str">'timestamp'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">()).</span><span class="pln">getTime</span><span class="pun">());</span><span class="pln"><br></span><span class="pun">},</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">);</span><span class="pln"><br>textarea</span><span class="pun">.</span><span class="pln">value </span><span class="pun">=</span><span class="pln"> window</span><span class="pun">.</span><b><span class="pln">localStorage</span></b><span class="pun">.</span><b><span class="pln">getItem</span></b><span class="pun">(</span><span class="str">'value'</span><span class="pun">);</span></pre>
+    <p id="localstorage-message">Enregistrer ce texte sur le client (récupérable)</p>
+    <textarea id="ta" placeholder="Entrer du texte ici..."></textarea>
+    <button id="save-ta">Enregistrer</button>
+    <p id="ta-log"></p>
+    <script type="text/javascript" async="" src="tech
+/ga.js"></script><script defer="">
+      (function(){
+
+        try {
+          (window.localStorage.getItem) // will throw in Firefox under some settings
+        } catch(e){
+          return; // quit because dom.storage.enabled is false
+        }
+
+        var area = document.querySelector('#ta');
+        // place content from previous edit
+        if (!area.value) {
+          area.value = window.localStorage.getItem('value');
+        }
+        updateLog(false);
+
+        // your content will be saved locally
+        document.querySelector('#save-ta').addEventListener('click', function () {
+          window.localStorage.setItem('value', area.value);
+          window.localStorage.setItem('timestamp', (new Date()).getTime());
+          updateLog(true);
+        }, false);
+
+        function updateLog(new_save) {
+          var log = document.querySelector("#ta-log");
+          var delta = 0;
+          if (window.localStorage.getItem('value')) {
+            delta = ((new Date()).getTime() - (new Date()).setTime(window.localStorage.getItem('timestamp'))) / 1000;
+            if (new_save) {
+              log.textContent = 'Enregistré. Le contenu sera disponible après re-chargement de la page.';
+              setTimeout(function() {
+                log.textContent = '';
+              }, 3000);
+            } else {
+              log.textContent = 'enregistré il y a: ' + delta + ' sec.';
+            }
+          }
+        }
+
+      })();  
+    </script>
+  </section>
+</div>
+
+<div class="slide offline-storage distant-slide" id="app-cache">
+  <style>
+    #appcache-message {
+      padding-top: 20px;
+      text-align: center;
+    }
+  </style>
+  <header><span class="js">JS</span> Cache applicatif</header>
+  <section>
+<pre class="prettyprint"><span class="tag">&lt;html</span><span class="pln"> </span><b><span class="atn">manifest</span><span class="pun">=</span><span class="atv">"cache.manifest"</span></b><span class="tag">&gt;</span><span class="pln"><br>window.</span><b><span class="pln">applicationCache</span></b><span class="pln">.addEventListener(</span><em><span class="pln">'checking'</span></em><span class="pln">, updateCacheStatus, false);</span></pre>
+<p>cache.manifest :</p>
+<pre class="prettyprint"><span class="pln">CACHE MANIFEST<br><br></span><span class="com"># version 1</span><span class="pln"><br><br>CACHE</span><span class="pun">:</span><span class="pln"><br></span><span class="str">/html5/</span><span class="pln">src</span><span class="pun">/</span><span class="pln">refresh</span><span class="pun">.</span><span class="pln">png<br></span><span class="pun">/</span><span class="pln">html5</span><span class="pun">/</span><span class="pln">src</span><span class="pun">/</span><span class="pln">logic</span><span class="pun">.</span><span class="pln">js<br></span><span class="pun">/</span><span class="pln">html5</span><span class="pun">/</span><span class="pln">src</span><span class="pun">/</span><span class="pln">style</span><span class="pun">.</span><span class="pln">css<br></span><span class="pun">/</span><span class="pln">html5</span><span class="pun">/</span><span class="pln">src</span><span class="pun">/</span><span class="pln">background</span><span class="pun">.</span><span class="pln">png</span></pre>
+
+  <!-- <p id="appcache-message">Turn off your internet connection and refresh this page! <img src="src/refresh.png" style="vertical-align:top"/></p> -->
+  </section>
+</div>
+
+<div class="slide transitionSlide performance distant-slide" id="hardware-access-title">
+  <section class="middle">
+    <header>Accès disque et hardware locaux</header>
+    <p>Intégration d'éléments du système d'exploitation</p>
+    <img src="tech
+/HTML5_Performance_64.png" title="HTML5 Performance &amp; Integration" alt="HTML5 Performance &amp; Integration">
+  </section>
+</div>
+
+<div class="slide performance distant-slide" id="drag-and-drop">
+  <style>
+    #drag-zone {
+      list-style: none;
+      float: left;
+      margin-top: 30px;
+    }
+    #drag-zone li * {
+      border: 4px solid #888;
+      display: block;
+    }
+    #drag-zone, #drop-zone, #drop-data { width: 30%; }
+    #drop-zone, #drop-data {
+      padding: 40px;
+      border: 5px solid #888;
+      float: right;
+      height: 240px;
+      overflow: auto;
+      font-size: 20px;
+      margin-top: 30px;
+      padding: 0;
+    }
+    #drop-zone.hovering {
+      border: 5px solid #aaa;
+      background-color: rgba(255, 0, 0, 0.199219);
+    }
+    #drop-data { 
+      background-color: #eee;
+      font-family: Monospace;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+      font-size: 14px;
+    }
+    .datatypes {
+      font-weight: bold;
+    }
+    .draggable-text {
+      padding: 5px;
+      font-size: 20px;
+    }
+  </style>
+  <header><span class="js">JS</span> Evènements Drag &amp; Drop</header>
+  <section id="dnd-section">
+<pre class="prettyprint"><span class="pln">document</span><span class="pun">.</span><span class="pln">addEventListener</span><span class="pun">(</span><em><span class="str">'dragstart'</span></em><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="kwd">event</span><span class="pun">.</span><b><span class="pln">dataTransfer</span><span class="pun">.</span><span class="pln">setData</span></b><span class="pun">(</span><span class="str">'text'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Customized text'</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="kwd">event</span><span class="pun">.</span><b><span class="pln">dataTransfer</span><span class="pun">.</span><span class="pln">effectAllowed</span></b><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">'copy'</span><span class="pun">;</span><span class="pln"><br></span><span class="pun">},</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">);</span></pre>
+    <ol id="drag-zone">
+      <li><img src="tech
+/dwd1.png" draggable="" class="copy"></li>
+      <li><span class="draggable-text" draggable="">Sélectionner le texte et le glisser (le texte original sera copié)</span></li>
+      <li><span class="draggable-text" draggable="">Sélectionner-le et glisser (le texte original sera modifié)</span></li>
+    </ol>
+    <div id="drop-data">Données sources</div>
+    <div id="drop-zone">Zone de dépôt</div>
+    <script defer="">
+    (function() {
+      var dragZone = document.querySelector('#drag-zone');
+      var dropZone = document.querySelector('#drop-zone');
+      dragZone.addEventListener('dragstart', function(event) {
+        if (event.target.className) { // img case
+          event.dataTransfer.effectAllowed = event.target.className;
+          event.target.style.border = "4px solid #cc3300";
+        }
+        else { // text case
+          if (event.target.parentNode.className == 'overwrite') {
+            event.dataTransfer.setData("text", "<strong>Overwritten Content</strong>");
+          }
+          event.target.parentNode.style.border = "4px solid #cc3300";
+        }
+        return true;
+      }, true);
+      dragZone.addEventListener('dragend', function(event) {
+        if (event.target.className) { // img case
+          event.target.style.border = "4px solid #888";
+        }
+        else { // text case
+          event.target.parentNode.style.border = "4px solid #888";
+        }
+        return true;
+      }, true);
+      dropZone.addEventListener('dragenter', function(event) {
+        if (event.preventDefault) event.preventDefault();
+        event.dataTransfer.dropEffect = 'copy';
+        this.className = 'hovering';
+        return false;
+      }, false);
+      dropZone.addEventListener('dragover', function(event) {
+        if (event.preventDefault) event.preventDefault(); // allows us to drop
+        event.dataTransfer.dropEffect = 'copy';
+        return false;
+      }, false);
+      dropZone.addEventListener('dragleave', function(event) {
+        if (event.preventDefault) event.preventDefault(); // allows us to drop
+        this.className = '';
+        return false;
+      }, false);
+      dropZone.addEventListener('drop', function(event) {
+        if (event.preventDefault) event.preventDefault();
+        var imgPassed = null;
+        var dropdata = document.querySelector('#drop-data');
+        var types = event.dataTransfer.types;
+        document.querySelector('#drop-data').textContent = '';
+        this.innerHTML = '';
+        for (var i = 0; i < types.length; i++) {
+          if (types[i] == 'Files') {
+            var files = event.dataTransfer.files;
+            for (var j = 0; j < files.length; j++) {
+              dropdata.textContent += 'File Name: '+files[j].fileName;
+              dropdata.textContent += 'File Size: '+files[j].fileSize;
+            }
+          }
+          else {
+            if (typeof event.dataTransfer.getData(types[i]) !== 'undefined') {
+              dropdata.innerHTML += '<p><em class="datatypes">'+types[i]+'</em>: <br />'+event.dataTransfer.getData(types[i]).replace(/</g, '&lt;') + '</p>';
+            }
+          }
+
+          if (types[i] == 'text/uri-list') {
+            imgPassed = event.dataTransfer.getData('text/uri-list');
+          }
+        }
+        if (imgPassed) {
+          var cEl = document.createElement('canvas');
+          cEl.width = 200;
+          cEl.height = 100;
+          var ctx = cEl.getContext('2d');
+          var img_buffer = document.createElement('img');
+          img_buffer.src = imgPassed;
+          img_buffer.style.display = 'none';
+          document.body.appendChild(img_buffer); // this line only needed in safari
+          img_buffer.onload = function() { ctx.drawImage(img_buffer,0,0,100,100); }
+          this.appendChild(cEl);
+        } else {
+          if (event.dataTransfer.getData('text')) {
+            this.innerHTML = event.dataTransfer.getData('text');
+          }
+          else if (event.dataTransfer.getData('text/plain')) {
+            this.innerHTML = event.dataTransfer.getData('text/plain');
+          }
+        }
+        return false;
+      }, false);
+    })();
+    </script>
+  </section>
+</div>
+
+
+<div class="slide performance distant-slide" id="drag-in">
+  <style>
+    #dropzone {
+      height: 150px;
+      width: 800px;
+      -webkit-border-radius: 10px;
+      -khtml-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      border: 2px dashed #0687FF;
+      margin-top: 30px;
+    }
+    #dropzone.rounded {
+      -webkit-box-shadow: inset 0px 0px 50px #777;
+      -moz-box-shadow: inset 0px 0px 50px #777;
+      -o-box-shadow: inset 0px 0px 50px #777;
+      box-shadow: inset 0px 0px 50px #777;
+    }
+    #dnd-thumbnails {
+      height: 125px;
+      margin-top: 10px;
+    }
+    #dnd-thumbnails img {
+      width: 75px;
+      height: 75px;
+      border: 1px solid black;
+      margin-right: 10px;
+      -webkit-transition: -webkit-transform 0.2s ease-in, margin-left 0.7s ease-in-out, margin-right 0.7s ease-in-out;
+      -moz-transition: -moz-transform 1s ease-in-out, margin-left 0.7s ease-in-out, margin-right 0.7s ease-in-out;
+      -o-transition: -o-transform 1s ease-in-out, margin-left 1s ease-in-out, margin-left 0.7s ease-in-out, margin-right 0.7s ease-in-out;
+    }
+    #dnd-thumbnails img:hover {
+      -webkit-transform: scale(3.0) rotate(10deg);
+      -webkit-transform-origin: 50% 75px;
+      -moz-transform: scale(3.0) rotate(10deg);
+      -moz-transform-origin: 50% 75px;
+      margin: 0 100px;
+    }
+  </style>
+  <header><span class="js">JS</span> Glisser-déposer du bureau (File API)</header>
+  <section>
+<p>Glissez des fichiers à partir du bureau :</p>
+<pre class="prettyprint"><span class="pln">document</span><span class="pun">.</span><span class="pln">querySelector</span><span class="pun">(</span><span class="str">'#dropzone'</span><span class="pun">).</span><span class="pln">addEventListener</span><span class="pun">(</span><span class="str">'drop'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="kwd">var</span><span class="pln"> reader </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><b><span class="typ">FileReader</span></b><span class="pun">();</span><span class="pln"><br>&nbsp; reader</span><span class="pun">.</span><span class="pln">onload </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">evt</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; document</span><span class="pun">.</span><span class="pln">querySelector</span><span class="pun">(</span><span class="str">'img'</span><span class="pun">).</span><span class="pln">src </span><span class="pun">=</span><span class="pln"> evt</span><span class="pun">.</span><span class="pln">target</span><span class="pun">.</span><b><span class="pln">result</span></b><span class="pun">;</span><span class="pln"><br>&nbsp; </span><span class="pun">};</span><span class="pln"><br><br>&nbsp; reader</span><span class="pun">.</span><b><span class="pln">readAsDataURL</span></b><span class="pun">(</span><span class="pln">evt</span><span class="pun">.</span><b><span class="pln">dataTransfer</span><span class="pun">.</span><span class="pln">files</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span></b><span class="pun">);</span><span class="pln"><br></span><span class="pun">},</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">);</span></pre>
+    <div class="example">
+      <div id="dropzone" class="vbox boxcenter center">
+        Déposer une image du bureau
+      </div>
+    </div>
+    <div id="dnd-thumbnails" class="center"></div>
+
+    <script src="tech
+/dnd-lib.js" defer=""></script>
+    <script defer="">
+      window.addEventListener('load', function(e) {
+        var dndc = new DNDFileController('dropzone', 'dnd-thumbnails');
+      }, false);
+    </script>
+  </section>
+</div>
+
+
+<div class="slide performance distant-slide" id="drag-out">
+  <style>
+    .dragout {
+      background: #0687FF;
+      color: #fff;
+      padding: 10px;
+      margin: 10px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+    }
+  </style>
+  <header><span class="js">JS</span> Glisser-déposer vers le bureau</header>
+  <section id="dnd-section">
+
+    <pre class="prettyprint"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"src/star.mp3"</span><span class="pln"> </span><span class="atn">draggable</span><span class="pun">=</span><span class="atv">"true"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dragout"</span><span class="pln"><br>&nbsp; &nbsp;</span><span class="atn">data-downloadurl</span><span class="pun">=</span><span class="atv">"</span><b><span class="atv">MIMETYPE:FILENAME:ABSOLUTE_URI_TO_FILE</span></b><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">download</span><span class="tag">&lt;/a&gt;</span></pre>
+
+    <pre class="prettyprint"><span class="kwd">var</span><span class="pln"> files </span><span class="pun">=</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">querySelectorAll</span><span class="pun">(</span><span class="str">'.dragout'</span><span class="pun">);</span><span class="pln"><br></span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">var</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> file</span><span class="pun">;</span><span class="pln"> file </span><span class="pun">=</span><span class="pln"> files</span><span class="pun">[</span><span class="pln">i</span><span class="pun">];</span><span class="pln"> </span><span class="pun">++</span><span class="pln">i</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; file</span><span class="pun">.</span><span class="pln">addEventListener</span><span class="pun">(</span><span class="str">'dragstart'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; e</span><span class="pun">.</span><span class="pln">dataTransfer</span><span class="pun">.</span><span class="pln">setData</span><span class="pun">(</span><span class="str">'DownloadURL'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">dataset</span><span class="pun">.</span><span class="pln">downloadurl</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="pun">},</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">);</span><span class="pln"><br></span><span class="pun">}</span></pre>
+
+    <div class="example" style="margin-top: 60px">
+      Glissez ces fichiers vers le bureau :
+      <a href="http://static.googleusercontent.com/external_content/untrusted_dlcp/www.google.com/en/us/intl/en/landing/chrome/cadie/glasses.pdf" class="dragout" data-downloadurl="application/pdf:Chrome3DGlasses.pdf:http://static.googleusercontent.com/external_content/untrusted_dlcp/www.google.com/en/us/intl/en/landing/chrome/cadie/glasses.pdf" draggable="true">.pdf file</a>
+      <a href="http://slides.html5rocks.com/src/star.mp3" class="dragout" data-downloadurl="audio/mpeg:star.mp3:http://slides.html5rocks.com/src/star.mp3" draggable="true">.mp3 file</a>
+    </div>
+    <p class="center" style="font-size:90%">(actuellement seulement disponible sur Google Chrome)</p>
+    <script defer="">
+      (function() {
+        var files = document.querySelectorAll('.dragout');
+        for (var i = 0, file; file = files[i]; ++i) {
+          file.setAttribute('draggable', 'true'); // Don't really need, but good practice.
+          file.addEventListener('dragstart', function(evt) {
+            evt.dataTransfer.setData('DownloadURL', this.getAttribute('data-downloadurl'));
+          }, false);
+        }
+      })();
+    </script>
+  </section>
+</div>
+
+
+<div class="slide performance distant-slide" id="geolocation">
+  <style>
+    #see-position {
+      margin-bottom: 10px;
+    }
+    #geo-map {
+      height: 280px;
+      width: 640px;
+    }
+    #geo-log {
+      background-color: red;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      visibility: hidden;
+    }
+  </style>
+  <header><span class="js">JS</span> Geolocalisation</header>
+  <section>
+<pre class="prettyprint"><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><b><span class="pln">navigator</span></b><span class="pun">.</span><b><span class="pln">geolocation</span></b><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; </span><b><span class="pln">navigator</span></b><span class="pun">.</span><b><span class="pln">geolocation</span></b><span class="pun">.</span><b><span class="pln">getCurrentPosition</span></b><span class="pun">(</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">position</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="kwd">var</span><span class="pln"> latLng </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> google</span><span class="pun">.</span><span class="pln">maps</span><span class="pun">.</span><span class="typ">LatLng</span><span class="pun">(</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; position</span><span class="pun">.</span><b><span class="pln">coords</span></b><span class="pun">.</span><b><span class="pln">latitude</span></b><span class="pun">,</span><span class="pln"> position</span><span class="pun">.</span><b><span class="pln">coords</span></b><span class="pun">.</span><b><span class="pln">longitude</span></b><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="kwd">var</span><span class="pln"> marker </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> google</span><span class="pun">.</span><span class="pln">maps</span><span class="pun">.</span><span class="typ">Marker</span><span class="pun">({</span><span class="pln">position</span><span class="pun">:</span><span class="pln"> latLng</span><span class="pun">,</span><span class="pln"> map</span><span class="pun">:</span><span class="pln"> map</span><span class="pun">});</span><span class="pln"><br>&nbsp; &nbsp; map</span><span class="pun">.</span><span class="pln">setCenter</span><span class="pun">(</span><span class="pln">latLng</span><span class="pun">);</span><span class="pln"><br>&nbsp; </span><span class="pun">},</span><span class="pln"> errorHandler</span><span class="pun">);</span><span class="pln"><br></span><span class="pun">}</span></pre>
+  <button id="see-position" style="margin-top:10px">Montrer Position</button> <span id="geo-log"></span>
+  <div id="geo-map" class="gmap example">
+    <img src="tech
+/staticmap(1)">
+  </div>
+
+			<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+			<script defer="">
+  (function() {
+    var map = null;
+    var geolog = document.querySelector('#geo-log');
+    var geoMap = document.querySelector('#geo-map');
+
+    function showPosition(position) {
+      geolog.textContent = "You're within " + position.coords.accuracy +
+          " meters of (" + position.coords.latitude + ", " +
+          position.coords.longitude + ")";
+      var latLng = new google.maps.LatLng(
+          position.coords.latitude, position.coords.longitude);
+      var marker = new google.maps.Marker({
+        position: latLng,
+        map: map
+      });
+      map.setCenter(latLng);
+      map.setZoom(15);
+    }
+
+    function handlePositionError(evt) {
+      geolog.textContent = evt.message;
+    }
+
+    function successPositionHandler(evt) {
+      // Load map if it doesn't already exist and when user clicks the button.
+      if (!map) {
+        map = new google.maps.Map(geoMap, {
+          zoom: 3,
+          center: new google.maps.LatLng(37.4419, -94.1419), // United States
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+        map.getDiv().style.border =  '1px solid #ccc';
+      }
+
+      if (navigator.geolocation) {
+        geolog.style.visibility = 'visible';
+        geolog.textContent = 'Looking for location...';
+        navigator.geolocation.getCurrentPosition(showPosition, handlePositionError);
+        // Also monitor position as it changes.
+        //navigator.geolocation.watchPosition(showPosition, handlePositionError);
+      } else {
+        geolog.textContent = 'Oops! Your browser does not support geolocation.';
+      }
+    }
+
+    document.querySelector('#see-position').addEventListener('click', successPositionHandler, false);
+    geoMap.addEventListener('click', successPositionHandler, false);
+  })();
+  </script>
+  </section>
+</div>
+
+<div class="slide distant-slide" id="and-much-more">
+			<header>Et encore bien plus !</header>
+			<section>
+
+				<ul>
+					<li><span class="js">JS</span> Notifications, Web Workers, WebSockets...</li>
+					<li><span class="js">JS</span> WebSQL</li>
+					<li><span class="html">HTML</span> Commande vocale</li>
+					<li><span class="html">HTML</span> ARIA (par ex. web pour mal-voyants)</li>
+					<li><span class="css">CSS</span> Mise en page: colonnes...</li>
+				</ul>
+  </section>
+</div>
+
+
+<div class="slide image" data-image="images/french/zoom.jpg"> 
+  <div> 
+    <section class="bottomRight dark"> 
+      <h1>Zoom créatif</h1> 
+    </section>
+  </div>
+</div>
+
+<div class="slide"> 
+  <header>Utilisation dans un contexte créatif</header> 
+  <section>
+    <ul>
+      <li>Styles et animations CSS3</li>
+      <li>Canvas / SVG</li>
+      <li>Vidéo et Son</li>
+      <li>Accéléromètre</li>
+      <li>WebGL</li>
+      <li>Et bien d'autres...</li>
+    </ul>
+  </section> 
+</div>
+
+
+<!--
+ *
+ * Test CSS3
+ *
+-->
+<div class="slide" id="slide-logo">
+  <header>CSS3</header>
+  <section>
+<pre><b>color</b>: <span id="logoColor">hsl(215,50%,50%)</span>; <span class="controls"><em>H</em>: <input id="logoHueSlider" type="range" min="0" max="255" value="215"> <em>S</em>: <input id="logoSatSlider" type="range" min="0" max="100" value="50"> <em>L</em>: <input id="logoLitSlider" type="range" min="0" max="100" value="100"></span>
+<b>background-color</b>: <span id="logoBgColor">hsl(50,50%,100%)</span>; <span class="controls"><em>H</em>: <input id="logoBgHueSlider" type="range" min="0" max="255" value="50"> <em>S</em>: <input id="logoBgSatSlider" type="range" min="0" max="100" value="50"> <em>L</em>: <input id="logoBgLitSlider" type="range" min="0" max="100" value="10"></span>
+
+<b>-webkit-box-reflect</b>: below 10px -webkit-gradient(
+     linear, left top, left bottom,
+     from(transparent), to(rgba(255, 255, 255, <span id="logoReflect">0</span>)));  <span class="controls"><em>Reflection</em>: <input id="logoReflectSlider" type="range" min="0" max="100" value="0"></span>
+<b>text-shadow</b>: <span id="logoShadow">rgba(0, 0, 0, 0.9) 0 0px 0px</span>;  <span class="controls"><em>Text Shadow</em>: <input id="logoShadowSlider" type="range" min="0" max="9" value="0"></span>
+<b>-webkit-box-shadow</b>: <span id="logoBoxShadow">rgba(0, 0, 0, 0.9) 0 0px 0px</span>;  <span class="controls"><em>Box Shadow</em>: <input id="logoBoxShadowSlider" type="range" min="0" max="9" value="0"></span>
+<b>-webkit-text-stroke</b>: <span id="logoStroke">0px #000</span>; <span class="controls"><em>Radius</em>: <input id="logoStrokeSlider" type="range" min="0" max="5" value="0"></span>
+<b>border-radius</b>: <span id="logoRadius">0px</span>; <span class="controls"><em>Radius</em>: <input id="logoRadiusSlider" type="range" min="0" max="50" value="0"></span></pre>
+    <div class="hcenter" id="logoWrap" style="-webkit-box-reflect: below 5px -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(rgba(255, 255, 255, 0))) 0 0 0 0 stretch stretch; ">
+      <div id="logoOutput" style="font-size:100px;color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.898438) 0px 0px 0px; -webkit-box-shadow: rgba(0, 0, 0, 0.898438) 0px 0px 0px; border-top-left-radius: 0px 0px; border-top-right-radius: 0px 0px; border-bottom-right-radius: 0px 0px; border-bottom-left-radius: 0px 0px; -webkit-text-stroke-width: 0px; -webkit-text-stroke-color: rgb(0, 0, 0); ">Hello world</div>
+    </div><br/><br/>
+  </section>
+</div>
+<script>
+function logoChangeColor(evt) {
+  var h = $('#logoHueSlider').val();
+  var s = $('#logoSatSlider').val();
+  var l = $('#logoLitSlider').val();
+  var color = "hsl(" + h + "," + s + "%," + l + "%)";
+  $('#logoOutput').css('color', color);
+  $('#logoColor').text(color);
+};
+
+function logoChangeBgColor(evt) {
+  var h = $('#logoBgHueSlider').val();
+  var s = $('#logoBgSatSlider').val();
+  var l = $('#logoBgLitSlider').val();
+  var color = "hsl(" + h + "," + s + "%," + l + "%)";
+  $('#logoOutput').css('background-color', color);
+  $('#logoBgColor').text(color);
+};
+
+function logoChangeReflect(evt) {
+  var r = $('#logoReflectSlider').val() / 100;
+  $('#logoWrap').css('-webkit-box-reflect',
+    "below 5px -webkit-gradient(linear, left top, left bottom, " +
+    "from(transparent), to(rgba(255, 255, 255, " + r + ")))");
+  $('#logoReflect').text(r);
+};
+
+function logoChangeShadow(evt) {
+  var s = $('#logoShadowSlider').val();
+  var css = "rgba(0, 0, 0, 0.9) 0 " + s + "px " + s + "px";
+  $('#logoOutput').css('text-shadow', css);
+  $('#logoShadow').text(css);
+};
+
+function logoChangeBoxShadow(evt) {
+  var s = $('#logoBoxShadowSlider').val();
+  var css = "rgba(0, 0, 0, 0.9) 0 " + s + "px " + s + "px";
+  $('#logoOutput').css('-webkit-box-shadow', css);
+  $('#logoBoxShadow').text(css);
+};
+
+function logoChangeStroke(evt) {
+  var s = $('#logoStrokeSlider').val();
+  var css = s + "px #000";
+  $('#logoOutput').css('-webkit-text-stroke', css);
+  $('#logoStroke').text(css);
+};
+
+function logoChangeRadius(evt) {
+  var r = $('#logoRadiusSlider').val();
+  var css = r + "px";
+  $('#logoOutput').css('border-radius', css);
+  $('#logoRadius').text(css);
+};
+
+$(document).ready(function() {
+  $('#logoHueSlider').bind('change', logoChangeColor);
+  $('#logoSatSlider').bind('change', logoChangeColor);
+  $('#logoLitSlider').bind('change', logoChangeColor);
+  $('#logoBgHueSlider').bind('change', logoChangeBgColor);
+  $('#logoBgSatSlider').bind('change', logoChangeBgColor);
+  $('#logoBgLitSlider').bind('change', logoChangeBgColor);
+  $('#logoReflectSlider').bind('change', logoChangeReflect);
+  $('#logoShadowSlider').bind('change', logoChangeShadow);
+  $('#logoBoxShadowSlider').bind('change', logoChangeBoxShadow);
+  $('#logoRadiusSlider').bind('change', logoChangeRadius);
+  $('#logoStrokeSlider').bind('change', logoChangeStroke);
+  logoChangeColor();
+  logoChangeBgColor();
+  logoChangeReflect();
+  logoChangeShadow();
+  logoChangeBoxShadow();
+  logoChangeRadius();
+  logoChangeStroke();
+});
+</script>
+
+<div class="slide"> 
+          <style> 
+            #fontface-sample {
+              text-align: center;
+              font-size: 130px;
+              font-family: 'Cabin Sketch';
+              margin-top: 30px;
+              margin-bottom: 50px;
+            }
+          </style> 
+          <header>Webfonts</header> 
+          <section> 
+ 
+<pre><b>@font-face</b> {
+  font-family: 'Cabin Sketch';
+  src: url(CabinSketch.otf);
+}
+ 
+header {
+  font-family: 'Cabin Sketch';
+}</pre> 
+ 
+            <div id="fontface-sample" class="example"> 
+              <span>Cabin Sketch</span> 
+            </div> 
+		  	<a target="_blank" href="http://www.google.com/webfonts">
+			    <img src="images/french/googlefonts.png" />
+			  </a>
+          </section> 
+        </div>
+
+<div class="slide">
+  <header>Canvas</header>
+  <section>
+	<style> 
+	              #canvas-area {
+	                background: white;
+	                -webkit-border-radius: 8px;
+	                -khtml-border-radius: 8px;
+	                -moz-border-radius: 8px;
+	                border-radius: 8px;
+	                border: 1px solid #bbb;
+	              }
+	            </style> 
+<pre>&lt;canvas id="canvas" width="838" height="220"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+  var canvasContext = document.getElementById("canvas").<b>getContext</b>("2d");
+  canvasContext.<b>fillRect</b>(250, 25, 150, 100);
+  canvasContext.<b>beginPath</b>();
+  canvasContext.<b>arc</b>(450, 110, 100, Math.PI * 1/2, Math.PI * 3/2);
+  canvasContext.<b>lineWidth</b> = 15;
+  canvasContext.<b>lineCap</b> = 'round';
+  canvasContext.<b>strokeStyle</b> = 'rgba(255, 127, 0, 0.5)';
+  canvasContext.<b>stroke</b>();
+&lt;/script&gt; </pre> 
+	            <canvas id="canvas-area" width="838" height="225"></canvas> 
+	            <script defer> 
+	              var canvasContext = document.getElementById("canvas-area").getContext("2d");
+	              canvasContext.fillRect(250, 25, 150, 100);
+	              canvasContext.beginPath();
+	              canvasContext.arc(450, 110, 100, Math.PI * 1/2, Math.PI * 3/2, false);
+	              canvasContext.lineWidth = 15;
+	              canvasContext.lineCap = 'round';
+	              canvasContext.strokeStyle = 'rgba(255, 127, 0, 0.5)';
+	              canvasContext.stroke();
+	            </script>
+  </section>
+</div>
+
+<div class="slide iframe">
+  <header>Canvas</header>
+  <section>
+		<iframe src="about:blank" data-src="http://slides.html5rocks.com/src/canvasphoto/index.html" frameborder=0 scrolling=no style="width:720px;height:500px"></iframe>
+  </section>
+</div>
+
+<div class="slide iframe">
+  <header>SVG</header>
+<section> 
+            <style> 
+              #svg {
+                -webkit-border-radius: 8px;
+                -khtml-border-radius: 8px;
+                -moz-border-radius: 8px;
+                border-radius: 8px;
+                border: 1px solid #bbb;
+              }
+            </style> 
+ 
+            <pre>&lt;html&gt;
+  &lt;svg&gt;
+    &lt;circle id="myCircle" class="important" cx="50%" cy="50%" r="100" 
+        fill="url(#myGradient)"
+        onmousedown="alert('hello');"/&gt;
+  &lt;/svg&gt;
+&lt;/html&gt;</pre> 
+ 
+            <div class="svg"></div> 
+ 
+          <script defer> 
+            // insert SVG using script until SVG in HTML5 is more widely supported
+            // (currently supported in IE 9 and Firefox nightlies only)
+            var container = document.getElementsByClassName('svg')[0];
+            var svgns = 'http://www.w3.org/2000/svg';
+            var svg = document.createElementNS(svgns, 'svg');
+            svg.setAttribute('width', '300px');
+            svg.setAttribute('height', '300px');
+            
+            // our linearGradient
+            var defs = document.createElementNS(svgns, 'defs');
+            var gradient = document.createElementNS(svgns, 'linearGradient');
+            gradient.setAttribute('id', 'myGradient');
+            gradient.setAttribute('x1', '0%');
+            gradient.setAttribute('y1', '100%');
+            gradient.setAttribute('x2', '100%');
+            gradient.setAttribute('y2', '0%');
+            var stop = document.createElementNS(svgns, 'stop');
+            stop.setAttribute('offset', '5%');
+            stop.setAttribute('stop-color', 'red');
+            gradient.appendChild(stop);
+            stop = document.createElementNS(svgns, 'stop');
+            stop.setAttribute('offset', '95%');
+            stop.setAttribute('stop-color', 'blue');
+            stop.setAttribute('stop-opacity', '0.5');
+            gradient.appendChild(stop);
+            defs.appendChild(gradient);
+            svg.appendChild(defs);
+            
+            // our example circle
+            var circle = document.createElementNS(svgns, 'circle');
+            circle.setAttribute('cx', '50%');
+            circle.setAttribute('cy', '50%');
+            circle.setAttribute('r', 100);
+            circle.setAttribute('fill', 'url(#myGradient)');
+            circle.setAttribute('stroke-color', 'red');
+            circle.addEventListener('mousedown', function() {
+              alert('hello');
+            }, false);
+            svg.appendChild(circle);
+            container.appendChild(svg);
+          </script> 
+            
+          </section>
+</div>
+
+<div class="slide" id="svg-intro"> 
+          <style> 
+            #svg-example {
+              padding: 0;
+              width: 550px;
+              height: 520px;
+            }
+          </style> 
+          <header>SVG (Scalable Vector Graphics)</header> 
+          <section> 
+            <div id="svg-example" class="example"></div> 
+          </section> 
+          <script> 
+            window.addEventListener('load', function() {
+              document.querySelector('#svg-example').innerHTML = '<object type="image/svg+xml" style="border:none; width:550px; height:520px; background: white;" data="http://jeremy-html5.appspot.com/famoustiger.svg"></object>'
+            }, false);
+          </script> 
+</div>
+
+<!--
+*
+* VIDEO/AUDIO
+*
+-->
+
+<div class="slide" id="video-audio"> 
+          <style> 
+            #video-column {
+              float: left;
+              width: 50%;
+              margin-top: 20px;
+            }
+            #reflection-button {
+              margin: 20px 0;
+            }
+            #audio-column {
+              float: left;
+              width: 45%;
+              margin-top: 120px;
+            }
+          </style> 
+          <header>Vidéo et son</header> 
+          <section>
+            
+<pre>&lt;<b>video</b> id="video" src="movie.webm" <b>autoplay</b> <b>controls</b>&gt;&lt;/video&gt;
+document.getElementById("video").<b>play</b>();
+</pre>  <br/>
+<pre>&lt;<b>audio</b> id="audio" src="sound.mp3" <b>controls</b>&gt;&lt;/audio&gt;
+document.getElementById("audio").<b>muted</b> = false;
+</pre>
+            <div id="video-column" class="center"> 
+              <video width="390" id="clip" controls> 
+                <source src="video/chrome.webm" type='video/webm; codecs="vp8, vorbis"' /> 
+              </video> 
+              <div class="media-buttons"> 
+                <input type="button" id="play-button" onclick="PlayVideo()"; value="Play" /> 
+                <input type="button" id="pause-button" onclick="PauseVideo()"; value="Pause" disabled /> 
+                <input type="button" id="mute" onclick="MuteUnMute()" value="Mute" /> 
+              </div> 
+            </div> 
+            
+            <div id="audio-column" class="center"> 
+              <audio id="audio-clip" width="670" controls> 
+                <source src="video/rushus-modal_blues.ogg" type="audio/ogg" /> 
+                Your browser does not support the audio tag
+              </audio> 
+              <div class="media-buttons"> 
+                <input type=button id="audio-play-button" onclick="PlayAudio()" value="Play" /> 
+                <input type=button id="audio-pause-button" onclick="PauseAudio()" value="Pause" disabled /> 
+                <input type=button id="audio-mute" onclick="MuteUnMuteAudio()" value="Mute" /> 
+              </div> 
+            </div> 
+          </section> 
+          <script defer> 
+            var videoClip = document.getElementById('clip');
+            var playButton = document.getElementById('play-button');
+            var pauseButton = document.getElementById('pause-button');
+ 
+            function PlayVideo() {
+              videoClip.play();
+              playButton.disabled = true;
+              pauseButton.disabled = false;
+            }
+ 
+            function PauseVideo() {
+              videoClip.pause();
+              playButton.disabled = false;
+              pauseButton.disabled = true;
+            }
+ 
+            function MuteUnMute() {
+              document.getElementById('mute').value = videoClip.muted ? 'Mute' : 'Unmute';
+              videoClip.muted = videoClip.muted ? false : true;
+            }
+ 
+            function OnFinished() {
+              playButton.disabled = false;
+              pauseButton.disabled = true;
+            }
+ 
+            function addReflection() {
+              videoClip.style.webkitBoxReflect = videoClip.style.webkitBoxReflect !== '' ? '' : "below 0px -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), color-stop(0.55, transparent), to(white))";
+            }
+          </script> 
+ 
+          <script defer> 
+            var audioClip = document.getElementById('audio-clip');
+            var audioPlayButton = document.getElementById('audio-play-button');
+            var audioPauseButton = document.getElementById('audio-pause-button');
+            audioClip.addEventListener('ended', OnAudioFinished, false);
+ 
+            function PlayAudio() {
+              audioClip.play();
+              audioPlayButton.disabled = true;
+              audioPauseButton.disabled = false;
+            }
+ 
+            function PauseAudio() {
+              audioClip.pause();
+              audioPlayButton.disabled = false;
+              audioPauseButton.disabled = true;
+            }
+ 
+            function MuteUnMuteAudio() {
+              document.getElementById('audio-mute').value = audioClip.muted ? 'Mute' : 'Unmute';
+              audioClip.muted = audioClip.muted ? false : true;
+            }
+ 
+            function OnAudioFinished() {
+              audioPlayButton.disabled = false;
+              audioPauseButton.disabled = true;
+            }
+          </script> 
+        </div>
+
+<!--
+*
+* VIDEO+CANVAS: Demo
+*
+--> 
+<div class="slide" id="slide-video-2"> 
+ <header>Vidéo magique</header> 
+ <section> 
+<pre>window.addEventListener('<em>deviceorientation</em>', function(event) {
+  var a = event.<b>alpha</b>;
+  var b = event.<b>beta</b>;
+  var g = event.<b>gamma</b>;
+}, false);</pre>
+     <video style="display: none" src="video/chrome.webm"></video> 
+   <div class="noflex hbox boxcenter"> 
+     <div class="vbox noflex"> 
+       <div style="margin-top:-150px" class="content"> 
+       </div> 
+     </div> 
+   </div> 
+ </section> 
+</div> 
+<script> 
+var vpc = null;
+function startVideoDemo() {
+  console.log('start video')
+  var parent = $('#slide-video-2 .content').get(0);
+  var video = $('#slide-video-2 video').get(0);
+  vpc = new VideoPhysicsController(parent, video, 750, 500);
+};
+function stopVideoDemo() {
+	if(!vpc) return;
+  console.log('stop video');
+  vpc.stop();
+  vpc = null;
+  var video = $('#slide-video-2 video').get(0);
+  //var src = video.src;
+  //video.src = src;
+  $('#slide-video-2 .content').empty();
+};
+$('#slide-video-2')
+ .bind('slide:onload', startVideoDemo)
+ .bind('slide:onunload', stopVideoDemo);
+</script>
+
+<!--
+ *
+ * WebGL
+ *
+--> 
+<div class="slide" id="slide-webgl">
+  	<style> 
+	            #webgl-iframe {
+	              border: none;
+	              width: 100%;
+	              height: 352px;
+	            }
+	          </style>
+  <header>WebGL</header> 
+  <section> 
+    <pre>&lt;canvas id="canvas"&gt;&lt;/canvas&gt;
+&lt;script&gt;
+var gl = document.getElementById("canvas").<b>getContext</b>("experimental-webgl");
+gl.<b>viewport</b>(0, 0, canvas.width, canvas.height);
+&lt;/script&gt;</pre> 
+
+    <iframe scrolling="no" data-src="http://slides.html5rocks.com/src/webgl/san_angeles.html" id="webgl-iframe"></iframe> 
+  </section> 
+</div>
+
+<div class="slide image" data-image="images/french/browserGallery.png"> 
+  <div> 
+    <section class="topRight dark"> 
+      <h1 style="font-size:1.5em">DEMO</h1> 
+    </section>
+  </div>
+</div>
+
+<div class="slide"> 
+  <header>Démos</header> 
+  <section>
+    <ul>
+      <!--<li><a target="_blank" href="http://www.airtightinteractive.com/demos/js/nebula">Effet de particules</a></li>
+      <li><a target="_blank" href="https://mozillademos.org/demos/remixingreality/demo.html">Réalité augmentée</a></li>-->
+      <li><a target="_blank" href="http://mrdoob.com/projects/chromeexperiments/google_gravity/">Google gravity</a></li>
+      <li><a target="_blank" href="http://data-arts.appspot.com/globe">WebGL Globe</a></li>
+      <li><a target="_blank" href="http://bodybrowser.googlelabs.com/body.html#m=1&note=&ui=1&opa=s:1,m:1,sk:1,c:1,o:1,ci:1,l:1,n:1&nav=1.63,131,160&sel=p:;h:;s:;c:0;o:0">Google Body</a></li>
+      <li><a target="_blank" href="http://helloracer.com/webgl/">HelloRacer</a></li>
+      <li><a target="_blank" href="http://chrome.angrybirds.com/">Angry Birds</a></li>
+      <li><a target="_blank" href="http://www.youtube.com/watch?v=fyfu4OwjUEI">Quake 2</a></li>
+      <li><a target="_blank" href="http://www.nevermindthebullets.com">Never mind the bullets</a></li>
+    </ul>
+  </section>
+</div>
+
+<div class="slide"> 
+  <header>Prolongez l'expérience HTML5</header> 
+  <section>
+    <ul>
+      <li><a target="_blank" href="http://www.chromeexperiments.com">http://www.chromeexperiments.com</a></li>
+      <li><a target="_blank" href="https://demos.mozilla.org/fr">https://demos.mozilla.org/fr</a></li>
+      <li><a target="_blank" href="http://www.apple.com/html5">http://www.apple.com/html5</a></li>
+      <li><a target="_blank" href="http://ie.microsoft.com/testdrive">http://ie.microsoft.com/testdrive</a></li>
+      <li><a target="_blank" href="http://html5advent.com">http://html5advent.com</a></li>
+    </ul>
+
+    <p>Démarrez maintenant : <a href="http://html5rocks.com">http://html5rocks.com</a><p/>
+  </section>
+</div>
+
+<a style="color:white" target="_blank" href="http://www.ro.me">
+<div class="slide image" data-image="images/french/rome.png">  
+</div>
+</a>
+
+<!--
+ *
+ * THANKs
+ *
+--> 
+ 
+<div class="slide segue green"> 
+  <section class="flex vbox boxcenter"> 
+    <h1>Merci !</h1>
+    <h3 class="titleText">
+        <strong>Sylvain Weber</strong><br> 
+        Rich Media Technical Specialist
+      </h3>
+	  <h3 class="titleText">
+        <strong>Thierry Le Boulengé</strong><br>
+        Software Engineer
+      </h3>
+  </section> 
+</div>
+ 
+
+      </div> <!-- slides --> 
+    </div> <!-- presentation --> 
+
+<script src="js/prettify.js"></script>
+<script src="js/slide-presentation.js"></script>
+<script src="js/box2d.min.js"></script> 
+<script src="js/slide-content.js"></script>
+<script src="js/dnd-lib.js"></script> 
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]--> 
+  </body> 
+</html>
