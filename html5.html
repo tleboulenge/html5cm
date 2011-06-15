@@ -748,11 +748,13 @@ TODO(ericbidelman): Add jump to slide
         map: map
       });
       map.setCenter(latLng);
-      map.setZoom(15);
+      map.setZoom(13);
     }
 
     function handlePositionError(evt) {
-      geolog.textContent = evt.message;
+      pos = {'coords': {'latitude':4.05, 'longitude':9.694}};
+      showPosition(pos);
+      console.log(pos);
     }
 
     function successPositionHandler(evt) {
